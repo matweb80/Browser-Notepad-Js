@@ -1,0 +1,237 @@
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/Vazir.ttf);
+}
+@font-face {
+    font-family: vazir-medium;
+    src: url(../fonts/Vazir-Medium.ttf);
+}
+
+*{
+    font-family: vazir , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+}
+html{
+    height: 100%;
+
+}
+body{
+    height: 80%;
+
+}
+a{
+    text-decoration:none;
+}
+.container{
+    margin-top: 50px;
+    height: 100%;
+
+}
+
+.top{
+    display: flex;
+
+}
+h1,h2{
+    text-align: center;
+    font-family: vazir-medium, sans-serif;
+    font-weight: 300;
+}
+h1{
+    font-size: 50px;
+    line-height: 3.5rem;
+}
+
+hr{
+    width: 50%;
+    border: #333 dashed 2px;
+    margin: 50px auto;
+    
+    
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 30px 35px;
+    height: 85%;
+
+}
+
+
+#label{
+    font-weight: 900;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea-note{
+    margin-top: 8px;
+    width: 100%;
+    min-height: 150px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+}
+
+.textarea-note:focus{
+    border: 1px solid #33C3F0;
+    outline: 0;
+}
+
+.submit{
+    margin-top: 20px;
+    color: #FFF;
+    background-color: #33C3F0;
+    border: none;
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 75px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.submit:hover{
+    background-color: #1EAEDB;
+}
+
+.left{
+    align-self: flex-start;
+    height: 100%;
+    min-height: 100%;
+}
+
+.left .top{
+    display: flex;
+    justify-content: center;
+}
+
+.left h2{
+    font-size: 38px;
+    line-height: 2rem;
+    margin: 30px auto 30px 0px;
+}
+#note-list{
+    min-height:97% ;
+    border-top: #D1D1D1 solid 1px;
+    border-bottom: none ;
+    border-right: #D1D1D1 dotted 10px;
+    border-left: #D1D1D1 double 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    padding: 8px;
+    background-color: #eeeeee;
+}
+
+.remove-note,
+.remove-note:hover {
+    float: left;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+li{
+    list-style: none;
+    word-break: break-all;
+}
+
+.error-empty{
+    color: red;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.clear-all-notes{
+    border: none;
+    background-color: #c0392b;
+    color: #fafafa;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    margin-right: auto;
+    height: 30px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media (max-width: 790px) {
+    .row{
+        flex-direction: column;
+        margin-top: 145px;
+    }
+    .right{
+        align-self: flex-start;
+        width: 100%;
+        display: block;
+    }
+    .textarea-note{
+        width: 100%;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left h2{
+        margin-top: 40px;
+    }
+    hr{
+        margin: 40px auto;
+    }
+}
+@media (min-width: 791px){
+    .right{
+        width: 47%;
+        margin-top: 29px;
+    }
+    .left{
+        width: 50%;
+        margin-right: 16px;
+        margin-left: 8px;
+    }
+    .left h2{
+        margin-top: 0px;
+    }
+}
+@media (min-width: 2560px){
+    h1{
+        font-size:80px;
+    }
+    h2{
+        font-size: 52px;
+    }
+    .left h2{
+        margin-top: 40px;
+        font-size: 48px;
+    }
+    #label{
+        font-size: 30px;
+    }
+    button,input{
+        font-size: 28px;
+        min-height: 55px;
+        border-radius: 6px;
+    }
+    .textarea-note{
+        min-height: 200px;
+        font-size: 40px;
+    }
+    #note-list{
+        font-size: 40px;
+    }
+}
